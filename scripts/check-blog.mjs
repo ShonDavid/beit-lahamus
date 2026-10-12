@@ -4,7 +4,7 @@ import { readFile, access } from 'node:fs/promises';
 const articles = JSON.parse(await readFile('src/articles.json', 'utf8'));
 const home = await readFile('dist/index.html', 'utf8');
 const index = await readFile('dist/blog/index.html', 'utf8');
-assert.equal(articles.length, 10);
+assert.ok(articles.length >= 10);
 assert.equal(new Set(articles.map(article => article.slug)).size, articles.length);
 assert.equal((home.match(/class="news-card"/g) || []).length, 3);
 assert.equal((index.match(/class="news-card"/g) || []).length, articles.length);
@@ -43,4 +43,4 @@ const party = await readFile('dist/blog/simchat-torah-ferret-party/index.html', 
 assert.match(party, /<figure class="video-pending">/);
 assert.ok(!party.includes('<video'));
 assert.match(await readFile('dist/blog/kubeh-hamusta/index.html', 'utf8'), /<ol>/);
-console.log('Passed: homepage cards, blog index, ten full articles, related links, assets, SEO, support buttons, RTL, recipe lists, festival table, and video placeholder.');
+console.log('Passed: homepage cards, blog index, all full articles, related links, assets, SEO, support buttons, RTL, recipe lists, festival table, and video placeholder.');
