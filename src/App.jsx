@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Page from './Page.jsx';
+import BlogPage from './Blog.jsx';
+import { updateBlogMetadata } from './blogMetadata.js';
 import { profiles, rescueStories, footerContent, paypalMe, paypalClientId } from './content.js';
 
 function Dialog({ children, onClose, titleId, descriptionId, id }) {
@@ -93,7 +95,8 @@ function PaymentDialog({ amount, onClose }) {
 	</Dialog>;
 }
 
-export default function App() {
+export default function App({ pathname = window.location.pathname }) {
+	useEffect(() => updateBlogMetadata(pathname), [pathname]);
 	const [menuOpen, setMenuOpen] = useState(false);
 	const [content, setContent] = useState(null);
 	const [amount, setAmount] = useState(null);
@@ -135,7 +138,7 @@ export default function App() {
 		}
 	}
 	return <>
-		<div onClick={handleAction}><Page {...{menuOpen, menuRef, videoRef, videoPaused, setVideoPaused}} /></div>
+		<div onClick={handleAction}>{pathname === '/blog' || pathname.startsWith('/blog/') ? <BlogPage {...{pathname, menuOpen, menuRef}} /> : <Page {...{menuOpen, menuRef, videoRef, videoPaused, setVideoPaused}} />}</div>
 		{content && <Dialog id="modal" titleId="modal-title" descriptionId="modal-body" onClose={() => setContent(null)}>
 			<span className="eyebrow green">{content[0]}</span><h2 id="modal-title">{content[1]}</h2><p id="modal-body">{content[2]}</p>
 			<button className="button" onClick={() => setContent(null)}>סגירה</button>

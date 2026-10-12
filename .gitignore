@@ -14,3 +14,8 @@ credentials.json
 .DS_Store
 *.log
 npm-debug.log*
+firebase-debug.log
+firebase-debug.*.log
+.firebase
+
+output
