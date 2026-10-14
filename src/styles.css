@@ -20,11 +20,11 @@ html[data-theme="dark"] .button.light{background:#e7efe9;color:#12241e}
 html[data-theme="dark"] .button.light:hover{background:#cfdcd4}
 html[data-theme="dark"] .ticker{background:#16211d;color:#d5e0d8}
 html[data-theme="dark"] .ticker>span{background:#254a40}
-html[data-theme="dark"] .intro p,.section-heading p,.guide p,.help p,.stats span,.status-list,.caption,.meta,.rescue-person,.rescue-content p{color:#9aada3}
+html[data-theme="dark"] .intro p,html[data-theme="dark"] .section-heading p,html[data-theme="dark"] .guide p,html[data-theme="dark"] .help p,html[data-theme="dark"] .stats span,html[data-theme="dark"] .status-list,html[data-theme="dark"] .caption,html[data-theme="dark"] .meta,html[data-theme="dark"] .rescue-person,html[data-theme="dark"] .rescue-person>span,html[data-theme="dark"] .rescue-content p{color:#9aada3}
 html[data-theme="dark"] .intro .lead{color:var(--ink)}
 html[data-theme="dark"] .steps{border-top-color:#2d3f37}
 html[data-theme="dark"] .steps b{color:#c4a57a}
-html[data-theme="dark"] .cards article,.rescue-card{background:#16211d;border-color:#2d3f37}
+html[data-theme="dark"] .cards article,html[data-theme="dark"] .rescue-card{background:#16211d;border-color:#2d3f37}
 html[data-theme="dark"] .photo>span{background:#0e1613;color:#e7efe9}
 html[data-theme="dark"] .tags span{background:#1f2c27;color:#c5d5cb}
 html[data-theme="dark"] .card-button{border-top-color:#2d3f37;color:var(--green)}
@@ -39,11 +39,11 @@ html[data-theme="dark"] .faq details{border-bottom-color:#2d3f37}
 html[data-theme="dark"] footer{background:#080e0c;color:#c5d5cb}
 html[data-theme="dark"] dialog{background:#16211d;color:var(--ink)}
 html[data-theme="dark"] .close{color:var(--ink)}
-html[data-theme="dark"] .modal-note,.payment-status{color:#9aada3}
+html[data-theme="dark"] .modal-note,html[data-theme="dark"] .payment-status{color:#9aada3}
 html[data-theme="dark"] .payment-purpose{background:#1f2c27;border-right-color:#9ec4b4}
 html[data-theme="dark"] .payment-consent input{accent-color:#9ec4b4}
 html[data-theme="dark"] .payment-cancel{color:var(--green)}
-html[data-theme="dark"] .payment-done,.payment-notice{background:#1f2c27;color:#c5d5cb}
+html[data-theme="dark"] .payment-done,html[data-theme="dark"] .payment-notice{background:#1f2c27;color:#c5d5cb}
 html[data-theme="dark"] .skip{background:#16211d;color:var(--ink)}
 html[data-theme="dark"] .menu-toggle{border-color:#3d5248;color:var(--green)}
 html[data-theme="dark"] .theme-toggle{color:var(--ink)}

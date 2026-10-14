@@ -29,33 +29,33 @@ html[data-theme="dark"] .news-masthead{border-bottom-color:#3d5248}
 html[data-theme="dark"] .news-disclosure{background:#1f2c27;color:#b7c9be;border-right-color:var(--green)}
 html[data-theme="dark"] .news-lead{background:#15241f}
 html[data-theme="dark"] .news-card{background:#16211d;border-color:#2d3f37}
-html[data-theme="dark"] .news-card p,.news-meta,.news-deck,.news-category{color:#9aada3}
-html[data-theme="dark"] .news-lead .news-category,.news-lead .news-read{color:#e3bd8b}
+html[data-theme="dark"] .news-card p,html[data-theme="dark"] .news-meta,html[data-theme="dark"] .news-deck,html[data-theme="dark"] .news-category{color:#9aada3}
+html[data-theme="dark"] .news-lead .news-category,html[data-theme="dark"] .news-lead .news-read{color:#e3bd8b}
 html[data-theme="dark"] .article-body{color:#d5e0d8}
 html[data-theme="dark"] th{background:#1f2c27}
-html[data-theme="dark"] th,td{border-bottom-color:#2d3f37}
+html[data-theme="dark"] th,html[data-theme="dark"] td{border-bottom-color:#2d3f37}
 html[data-theme="dark"] .home-news{border-top-color:#2d3f37}
 html[data-theme="dark"] .article-support{background:#15241f}
 html[data-theme="dark"] .support-options button{background:#e7efe9;color:#12241e}
 html[data-theme="dark"] .support-options button:hover{background:#e3bd8b}
 html[data-theme="dark"] .nav-new{background:#254a40}
-html[data-theme="dark"] .horoscope-picker,.horoscope-result{background:#16211d;border-color:#2d3f37}
+html[data-theme="dark"] .horoscope-picker,html[data-theme="dark"] .horoscope-result{background:#16211d;border-color:#2d3f37}
 html[data-theme="dark"] .horoscope-signs button{background:#1f2c27;border-color:#2d3f37;color:var(--green)}
 html[data-theme="dark"] .horoscope-signs button[aria-pressed="true"]{background:#254a40;color:#e3bd8b;border-color:#254a40}
-html[data-theme="dark"] .horoscope-birthday input,.birthday-fields select{background:#0e1613;border-color:#3d5248;color:var(--green)}
+html[data-theme="dark"] .horoscope-birthday input,html[data-theme="dark"] .birthday-fields select{background:#0e1613;border-color:#3d5248;color:var(--green)}
 html[data-theme="dark"] .birthday-fields select{background-color:#0e1613}
 html[data-theme="dark"] .horoscope-track{background:#1f2c27}
 html[data-theme="dark"] .horoscope-luck{border-top-color:#2d3f37}
 html[data-theme="dark"] .birthday-card{background:linear-gradient(135deg,#1a2621,#16211d);border-color:#3d5248}
-html[data-theme="dark"] .birthday-caption p,.birthday-card legend,.horoscope-sign-heading p{color:#9aada3}
+html[data-theme="dark"] .birthday-caption p,html[data-theme="dark"] .birthday-card legend,html[data-theme="dark"] .horoscope-sign-heading p{color:#9aada3}
 html[data-theme="dark"] .birthday-icon{background:#254a40;color:#e3bd8b}
 html[data-theme="dark"] .horoscope-sign-medallion{background:linear-gradient(135deg,#1a2621,#16211d);border-color:#3d5248;color:#d4a874}
 html[data-theme="dark"] .horoscope-share{background:#1f2c27;border-color:#2d3f37}
 html[data-theme="dark"] .horoscope-share summary{color:var(--green)}
 html[data-theme="dark"] .horoscope-share summary:hover{background:#24332d}
-html[data-theme="dark"] .horoscope-share summary small,.share-options>p,.share-option-grid small{color:#9aada3}
+html[data-theme="dark"] .horoscope-share summary small,html[data-theme="dark"] .share-options>p,html[data-theme="dark"] .share-option-grid small{color:#9aada3}
 html[data-theme="dark"] .share-options{border-top-color:#2d3f37}
-html[data-theme="dark"] .share-option-grid>a,.share-option-grid>button{background:#0e1613;border-color:#2d3f37;color:var(--green)}
+html[data-theme="dark"] .share-option-grid>a,html[data-theme="dark"] .share-option-grid>button{background:#0e1613;border-color:#2d3f37;color:var(--green)}
 html[data-theme="dark"] .article-body blockquote{background:#1f2c27;color:var(--green);border-color:#b58c58}
 @media(max-width:1000px){html[data-theme="dark"] header nav{border-top-color:#2d3f37}}
 html[data-theme="dark"] .horoscope-feature,html[data-theme="dark"] .horoscope-intro{background:#15241f;color:#e7efe9}
