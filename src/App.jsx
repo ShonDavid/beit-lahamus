@@ -3,6 +3,7 @@ import Page from './Page.jsx';
 import BlogPage from './Blog.jsx';
 import { updateBlogMetadata } from './blogMetadata.js';
 import { profiles, rescueStories, footerContent, paypalMe, paypalClientId } from './content.js';
+import { themedAsset, useTheme } from './theme.jsx';
 
 function Dialog({ children, onClose, titleId, descriptionId, id }) {
 	const ref = useRef(null);
@@ -97,6 +98,7 @@ function PaymentDialog({ amount, onClose }) {
 
 export default function App({ pathname = window.location.pathname }) {
 	useEffect(() => updateBlogMetadata(pathname), [pathname]);
+	const { dark } = useTheme();
 	const [menuOpen, setMenuOpen] = useState(false);
 	const [content, setContent] = useState(null);
 	const [amount, setAmount] = useState(null);
@@ -106,9 +108,14 @@ export default function App({ pathname = window.location.pathname }) {
 	useEffect(() => {
 		const video = videoRef.current;
 		if (!video) return;
+		const next = themedAsset('/assets/hero.mp4', dark);
+		if (video.getAttribute('src') !== next) {
+			video.setAttribute('src', next);
+			video.load();
+		}
 		video.muted = true;
 		video.play().catch(() => setVideoPaused(true));
-	}, []);
+	}, [dark, pathname]);
 	useEffect(() => {
 		function escape(event) {
 			if (event.key === 'Escape' && menuOpen && !content && amount === null) {
@@ -123,7 +130,7 @@ export default function App({ pathname = window.location.pathname }) {
 		const target = event.target.closest('button, a');
 		if (!event.target.closest('header')) setMenuOpen(false);
 		if (!target) return;
-		if (target.closest('#main-nav')) setMenuOpen(false);
+		if (target.closest('#main-nav') && !target.closest('.theme-toggle')) setMenuOpen(false);
 		if (target.classList.contains('menu-toggle')) setMenuOpen((open) => !open);
 		if (target.dataset.profile) setContent(['החמוסים שלנו', ...profiles[target.dataset.profile]]);
 		if (target.dataset.story) {

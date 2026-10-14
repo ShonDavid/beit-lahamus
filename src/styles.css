@@ -7,3 +7,59 @@
 .cards img[src$="bamba-v2.jpg"]{object-position:72% 50%}.cards img[src$="louis-v2.jpg"]{object-position:45% 50%}.cards img[src$="rex-v2.jpg"]{object-position:50% 50%}
 
 .menu-toggle{display:none;border:1px solid #a4b19e;background:transparent;color:#173d36;border-radius:4px;padding:8px 12px;font-size:14px}header{position:relative;z-index:3}dialog{overflow-wrap:anywhere}dialog .close{min-width:44px;min-height:44px}.footer-links a{padding:8px 0}.faq summary{min-height:32px}.brand small{font-size:12px}.caption,.meta,.rescue-person>span{color:#64705e}@media(max-width:650px){header{gap:12px;flex-wrap:wrap;height:auto;min-height:80px;padding-top:15px;padding-bottom:15px}.menu-toggle{display:block;margin-right:auto}header>.small{margin-right:auto}header nav{display:none;order:5;flex-basis:100%;flex-direction:column;gap:0;padding-top:12px;border-top:1px solid #d0d8cb;margin-top:10px;font-size:16px}header nav.is-open{display:flex}header nav a{padding:12px}.brand small{font-size:12px}.hero-bottom{gap:12px;align-items:center}.hero-bottom>span{font-size:12px}.hero-bottom button{font-size:12px;min-height:44px}}@media(max-width:360px){header>.small{flex-basis:100%;text-align:center}.hero h1{font-size:40px}.hero-bottom{flex-wrap:wrap}}
+
+.header-actions{display:flex;align-items:center;gap:12px}.theme-toggle{display:inline-flex;align-items:center;justify-content:space-between;gap:12px;border:0;background:transparent;color:var(--green);padding:0;font-size:13px;font-weight:600;min-height:40px;cursor:pointer}.theme-toggle-label{line-height:1}.theme-toggle-track{position:relative;width:44px;height:26px;border-radius:999px;background:#c5ceba;border:1px solid #a4b19e;transition:background .2s,border-color .2s;flex-shrink:0}.theme-toggle-thumb{position:absolute;top:2px;right:2px;width:20px;height:20px;border-radius:50%;background:white;box-shadow:0 1px 3px #0003;transition:transform .2s}.theme-toggle[aria-checked="true"] .theme-toggle-track{background:var(--green);border-color:var(--green)}.theme-toggle[aria-checked="true"] .theme-toggle-thumb{transform:translateX(-18px)}.theme-toggle--menu{display:none}.theme-toggle--header{display:inline-flex}
+html[data-theme="dark"]{--green:#9ec4b4;--ink:#e7efe9;--paper:#0e1613;--orange:#d4a874;color-scheme:dark}
+html[data-theme="dark"] body{background:var(--paper);color:var(--ink)}
+html[data-theme="dark"] header{background:var(--paper)}
+html[data-theme="dark"] .brand-mark{background:#1f3f36;color:#e7efe9}
+html[data-theme="dark"] nav a:hover{color:#e3bd8b}
+html[data-theme="dark"] .button{background:#254a40;color:#f3f7f2}
+html[data-theme="dark"] .button:hover{background:#315e51}
+html[data-theme="dark"] .button.light{background:#e7efe9;color:#12241e}
+html[data-theme="dark"] .button.light:hover{background:#cfdcd4}
+html[data-theme="dark"] .ticker{background:#16211d;color:#d5e0d8}
+html[data-theme="dark"] .ticker>span{background:#254a40}
+html[data-theme="dark"] .intro p,.section-heading p,.guide p,.help p,.stats span,.status-list,.caption,.meta,.rescue-person,.rescue-content p{color:#9aada3}
+html[data-theme="dark"] .intro .lead{color:var(--ink)}
+html[data-theme="dark"] .steps{border-top-color:#2d3f37}
+html[data-theme="dark"] .steps b{color:#c4a57a}
+html[data-theme="dark"] .cards article,.rescue-card{background:#16211d;border-color:#2d3f37}
+html[data-theme="dark"] .photo>span{background:#0e1613;color:#e7efe9}
+html[data-theme="dark"] .tags span{background:#1f2c27;color:#c5d5cb}
+html[data-theme="dark"] .card-button{border-top-color:#2d3f37;color:var(--green)}
+html[data-theme="dark"] .story{background:#15241f}
+html[data-theme="dark"] .stats div{border-left-color:#2d3f37}
+html[data-theme="dark"] .status-list{border-top-color:#2d3f37}
+html[data-theme="dark"] .help{background:#16211d}
+html[data-theme="dark"] .help .eyebrow{color:#9ec4b4}
+html[data-theme="dark"] .donations button{background:#0e1613;color:var(--green);border-color:#2d3f37}
+html[data-theme="dark"] .donations button:hover{background:#1f2c27}
+html[data-theme="dark"] .faq details{border-bottom-color:#2d3f37}
+html[data-theme="dark"] footer{background:#080e0c;color:#c5d5cb}
+html[data-theme="dark"] dialog{background:#16211d;color:var(--ink)}
+html[data-theme="dark"] .close{color:var(--ink)}
+html[data-theme="dark"] .modal-note,.payment-status{color:#9aada3}
+html[data-theme="dark"] .payment-purpose{background:#1f2c27;border-right-color:#9ec4b4}
+html[data-theme="dark"] .payment-consent input{accent-color:#9ec4b4}
+html[data-theme="dark"] .payment-cancel{color:var(--green)}
+html[data-theme="dark"] .payment-done,.payment-notice{background:#1f2c27;color:#c5d5cb}
+html[data-theme="dark"] .skip{background:#16211d;color:var(--ink)}
+html[data-theme="dark"] .menu-toggle{border-color:#3d5248;color:var(--green)}
+html[data-theme="dark"] .theme-toggle{color:var(--ink)}
+html[data-theme="dark"] .theme-toggle-track{background:#2d3f37;border-color:#3d5248}
+html[data-theme="dark"] .theme-toggle[aria-checked="true"] .theme-toggle-track{background:#254a40;border-color:#9ec4b4}
+html[data-theme="dark"] .theme-toggle-thumb{background:#e7efe9}
+html[data-theme="dark"] .ok{color:#7fba78}
+html[data-theme="dark"] .bad{color:#e07a64}
+html[data-theme="dark"] .warn{color:#d4a874}
+html[data-theme="dark"] h2 em{color:#d4a874}
+@media(max-width:650px){html[data-theme="dark"] header nav{border-top-color:#2d3f37}}
+@media(max-width:1000px){html[data-theme="dark"] header nav{border-top-color:#2d3f37}}
+@media(max-width:1000px){
+	.theme-toggle--header{display:none}
+	.theme-toggle--menu{display:flex;width:100%;margin-top:8px;padding:14px 12px;border-top:1px solid #d0d8cb;font-size:16px}
+	.header-actions .button.small,header .button.small{margin-right:auto}
+}
+html[data-theme="dark"] .theme-toggle--menu{border-top-color:#2d3f37}
+@media(max-width:360px){header .button.small{flex-basis:100%;text-align:center}}

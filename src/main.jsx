@@ -1,9 +1,10 @@
 import React from 'react';
 import { createRoot, hydrateRoot } from 'react-dom/client';
 import App from './App.jsx';
+import { ThemeProvider } from './theme.jsx';
 import './styles.css';
 import './blog.css';
 const root = document.getElementById('root');
-const app = <React.StrictMode><App /></React.StrictMode>;
+const app = <React.StrictMode><ThemeProvider><App /></ThemeProvider></React.StrictMode>;
 if (root.hasChildNodes()) hydrateRoot(root, app);
 else createRoot(root).render(app);
